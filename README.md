@@ -17,7 +17,7 @@ source("searchcomcat.R")  (use the full path name if it is in another directory)
 
 comcatdata <- comcathypocsv()   (this retrieves all earthquakes for the past 30 days into a data frame called comcatdata)
 
-to apply different search criteria see the parameters listed in the function call below or at http://comcat.cr.usgs.gov/fdsnws/event/1/, e.g.:
+to apply different search criteria see the parameters listed in the function call below or at `https://earthquake.usgs.gov/fdsnws/event/1/`, e.g.:
 
 comcatdata <- comcathypocsv(minmagnitude=5)   (this will return only M>=5 earthquakes)
 
@@ -71,6 +71,6 @@ it makes sure that starttime is before endtime
 
 if a parameter is not set in the call to the function then it is not used in the search and Comcat defaults are used
 
-see http://comcat.cr.usgs.gov/fdsnws/event/1/ for more info on parameters and their defaults
+see `https://earthquake.usgs.gov/fdsnws/event/1/` for more info on parameters and their defaults
 
 see the function itself for the full list of parameters in the function call.  Parameters are shown with their defaults and do not need to be given unless you want to change them.
