@@ -126,7 +126,7 @@ if(is.na(endtime))endtime <- as.POSIXlt(Sys.time(), "GMT") + (1*24*3600) # defau
 if(endtime < starttime){
 	junk <- endtime
 	endtime <- starttime
-	starttime <- endtime
+	starttime <- junk
 }
 
 # put times into timepoints array that will get extended as needed to fit the maxeventspersearch limit
